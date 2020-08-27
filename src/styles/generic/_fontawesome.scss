@@ -1,0 +1,17 @@
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+$fa-font-size-base: 16px;
+$fa-font-display: block;
+$fa-css-prefix: fa;
+$fa-version: "5.14.0";
+$fa-border-color: #eee;
+$fa-inverse: #fff;
+$fa-li-width: 2em;
+$fa-fw-width: (20em / 16);
+$fa-primary-opacity: 1;
+$fa-secondary-opacity: 0.4;
+
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+

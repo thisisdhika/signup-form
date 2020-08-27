@@ -1,7 +1,9 @@
 import * as React from "react";
 import { render } from "react-dom";
-import App from "./components/App";
+import Index from "./pages/Index";
+
+import "./styles/main.scss";
 
 const rootEl = document.getElementById("root");
 
-render(<App />, rootEl);
+render(<Index />, rootEl);

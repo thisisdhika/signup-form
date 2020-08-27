@@ -1,0 +1,26 @@
+.tid-btn {
+  position: relative;
+  display: block;
+  font-weight: theme("fontWeight.medium");
+  font-size: 14px;
+  border-radius: theme("borderRadius.md");
+  box-shadow: theme("boxShadow.md");
+  padding: {
+    top: theme("padding.2");
+    right: theme("padding.4");
+    bottom: theme("padding.2");
+    left: theme("padding.4");
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: none;
+    border: none;
+  }
+
+  &-primary {
+    background-color: theme("colors.blue.500");
+    color: theme("colors.white");
+  }
+}

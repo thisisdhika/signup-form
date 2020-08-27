@@ -1,0 +1,115 @@
+.tid-form {
+  @apply py-5;
+  @apply px-4;
+  position: relative;
+  overflow: hidden;
+  box-shadow: theme("boxShadow.md");
+  border-radius: theme("borderRadius.md");
+  border: solid 0.5px theme("colors.gray.tid");
+  width: 100%;
+
+  @media (min-width: theme("screens.tablet")) {
+    width: 500px;
+  }
+
+  &__group {
+    font-size: 14px;
+
+    label {
+      font-weight: 600;
+      color: theme("colors.gray.700");
+      line-height: 1;
+    }
+  }
+
+  &__success {
+    @apply inset-0;
+    top: 100%;
+    position: absolute;
+    pointer-events: unset;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .loader {
+    @apply inset-0;
+    position: absolute;
+    pointer-events: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0.8%;
+    height: 100%;
+    background-color: theme("colors.blue.500");
+    opacity: 0.8;
+    z-index: 2;
+    color: white;
+    font-weight: bold;
+    transition: background-color ease-in-out 150ms;
+    transition-delay: 500ms;
+
+    span {
+      opacity: 0;
+    }
+  }
+
+  &.success {
+    .loader {
+      background-color: theme("colors.green.500");
+    }
+  }
+}
+
+.tid-input {
+  @apply py-1;
+  @apply px-2;
+  width: 100%;
+  border: solid 1px theme("colors.gray.tid");
+  border-radius: theme("borderRadius.md");
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 36px;
+  transition: border-color ease-in 100ms;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: theme("colors.blue.500");
+  }
+
+  &__el {
+    width: 100%;
+
+    &:hover,
+    &:focus,
+    &:active {
+      outline: none;
+    }
+  }
+
+  button {
+    &.tid-input__prepend {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background-color: transparent;
+      width: 25px;
+      height: 25px;
+      color: theme("colors.gray.600");
+      transition: background-color ease-in 100ms;
+
+      &:hover,
+      &:focus,
+      &:active {
+        outline: none;
+        background-color: theme("colors.gray.tid");
+      }
+    }
+  }
+}
