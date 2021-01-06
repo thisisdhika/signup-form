@@ -64,7 +64,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.14.0",
     "animejs": "^3.2.0",
-    "axios": "^0.20.0",
+    "axios": "^0.21.1",
     "classnames": "^2.2.6",
     "lodash": "^4.17.20",
     "rc-field-form": "^1.10.1",
